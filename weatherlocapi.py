@@ -12,7 +12,7 @@ api_key= "067e773acbe43ac693677db3d85dc144"
 lat = location[0]
 long = location[1]
 
-#url for 
+#url 
 url = "http://api.openweathermap.org/data/2.5/weather?lat={}&lon={}&appid={}".format(lat,long,api_key)
 
 
@@ -48,14 +48,7 @@ if  c_or_f == "c" or  c_or_f== "celcius" or c_or_f== "f" or  c_or_f =="farenheit
        current_pressure = weather_data["pressure"] 
   
        # current humidity
-       current_humidiy = weather_data["humidity"] 
-  
-       # current weather conditions
-       #conditions = weather_data["weather"] 
-  
-       # description of weather (ie foggy, sunny,etc)
-       # weather_description = conditions[0]["description"] 
-
+       current_humidiy = weather_data["humidity"]
 
        #prints current weather if city found, if not, prints message
 
